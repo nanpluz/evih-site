@@ -1,0 +1,86 @@
+.go-home {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cogu {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+}
+
+.somarakis {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) {
+    .somarakis img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .somarakis img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .somarakis img {
+        width: 150px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.menu__item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    transition: 100ms;
+}
+
+.menu__item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bolinhas-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/bolinhas.svg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--rosa);
+    z-index: -2;
+}

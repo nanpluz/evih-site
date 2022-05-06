@@ -1,0 +1,10 @@
+{
+    "comissions": {
+        "open": "Opened comissions",
+        "closed": "Closed comissions"
+    },
+    "choices": {
+        "works": "My artworks",
+        "shop": "Shop"
+    }
+}

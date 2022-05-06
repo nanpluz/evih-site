@@ -1,0 +1,39 @@
+<div *ngIf="showLanguageChoice" class="popup-overlay"></div>
+<div *ngIf="showLanguageChoice" class="language-popup">
+  <p>Choose your language</p>
+  <div>
+    <button (click)="choiceLanguage('pt-BR')">pt-BR</button>
+    <button (click)="choiceLanguage('en-US')">en-US</button>
+  </div>
+</div>
+<div class="background">
+  <img class="logo" src="assets/somaraki.png" />
+  <h1 class="logotipo">Evih</h1>
+  <div class="comissions">{{ "comissions.open" | translate }}</div>
+
+  <div class="socials">
+    <a class="social insta" href="#">
+      <img src="assets/insta.svg" />
+    </a>
+    <a class="social deviantart" href="#">
+      <img src="assets/deviantart.svg" />
+    </a>
+    <a class="social pixiv" href="#">
+      <img src="assets/pixiv.svg" />
+    </a>
+    <a class="social tumblr" href="#">
+      <img src="assets/tumblr.svg" />
+    </a>
+    <a class="social twitter" href="#">
+      <img src="assets/twitter.svg" />
+    </a>
+  </div>
+
+  <button class="site-button">
+    <img src="assets/art.svg" />{{ "choices.works" | translate }}
+  </button>
+  <button class="site-button" routerLink="loja">
+    <img src="assets/shop.svg" />{{ "choices.shop" | translate }}
+  </button>
+</div>
+<div class="strawberry-background"></div>
