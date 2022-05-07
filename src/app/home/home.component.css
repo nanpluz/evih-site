@@ -195,6 +195,10 @@
     }
 }
 
+.site-button:last-of-type {
+    padding: 5px 5px 30px;
+}
+
 .site-button:hover {
     transform: translateX(5px);
     color: #ffffff;

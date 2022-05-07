@@ -8,20 +8,12 @@
     cursor: pointer;
 }
 
-.cogu {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-}
-
 .somarakis {
     display: flex;
     justify-content: space-evenly;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .somarakis img {
         width: 300px;
     }
@@ -33,34 +25,63 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
     .somarakis img {
         width: 150px;
     }
+}
+
+.menu-shadow {
+    margin: 4px auto 0;
+    width: 80%;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 8px 8px 0 10px rgb(233, 255, 255);
+}
+
+.menu-true-shadow {
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 4px 4px 8px 0 black;
 }
 
 .menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
     height: 60px;
-    background-color: black;
+    border-radius: 0 5px 5px 5px;
+    background-color: #D79487;
+    box-shadow: 0 0 0 4px black;
 }
 
 .menu__item {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     font-size: 20px;
-    color: white;
-    transition: 100ms;
+    font-weight: bold;
+    color: black;
+    box-shadow: inset 4px 0 0 0 black;
+    transition: 200ms;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media screen and (max-width: 800px) {
+    .menu__item{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu__item{
+        font-size: 12px;
+    }
 }
 
 .menu__item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--rosa);
 }
 
 .bolinhas-background {
