@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private translateService: TranslateService) { }
 
-  public showLanguageChoice = true;
+  public showLanguageChoice = window.localStorage.getItem("lang") != "isSet";
 
   ngOnInit(): void {
   }
@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   choiceLanguage(language: string) {
     this.translateService.use(language);
     this.showLanguageChoice = false;
+    window.localStorage.setItem("lang", "isSet")
   }
 
 }
