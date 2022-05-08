@@ -1,11 +1,31 @@
 .go-home {
+    all: unset;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.go-home img {
+    width: 35px;
+}
+
+.go-home {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D79487;
+    transition: 200ms;
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.go-home:hover {
+    background-color: var(--rosa);
 }
 
 .somarakis {
@@ -69,13 +89,13 @@
 }
 
 @media screen and (max-width: 800px) {
-    .menu__item{
+    .menu__item {
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .menu__item{
+    .menu__item {
         font-size: 12px;
     }
 }
@@ -95,6 +115,30 @@
     background-position: center;
     z-index: -1;
 }
+
+.content {}
+
+.content__block {
+    margin: 40px auto 0;
+    width: 80%;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 0 0 4px black;
+}
+
+.block__header {
+    height: 50px;
+    box-shadow: 0 0 0 4px black;
+    background-color: #D79487;
+}
+
+.block__header h1 {
+    line-height: 50px;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.block__content {}
 
 .background {
     position: fixed;
